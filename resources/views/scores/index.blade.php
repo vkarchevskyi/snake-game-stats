@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet"/>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 </head>
 <body class="font-sans antialiased dark:bg-gray-800 dark:text-white/50 p-4">
 <div class="text-black/50 dark:bg-gray-800 dark:text-white/50 max-w-2xl mx-auto lg:my-8">
