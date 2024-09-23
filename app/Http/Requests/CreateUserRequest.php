@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateScoreRequest extends FormRequest
+class CreateUserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,7 +22,7 @@ class CreateScoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'value' => ['required', 'integer', 'min:0'],
+            'name' => ['required', 'string', 'min:1', 'max:255'],
         ];
     }
 }

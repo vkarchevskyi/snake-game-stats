@@ -53,7 +53,7 @@ class ScoreController extends Controller
 
         return $createScoreAction->run(
             $request->integer('value'),
-            mb_trim($request->string('name')->toString()),
+            $request->user()
         );
     }
 }
